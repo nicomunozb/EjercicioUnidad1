@@ -1,3 +1,4 @@
+<?php include '../lib/constante.php'?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -15,10 +16,10 @@ and open the template in the editor.
     <body>
         
         <div id="contenedor">
-            <div id="titulo"></div>
-            <div id="menu"><?php include('menu.php');?></div>
-                <div id="contenido">
-                    
+            <div id="tituloSitio"></div>
+            <div id="menu"><?php include('../menu.php');?></div>
+                <div id="tituloPag">
+                    <br>Nombre: <input id="nombre" name="nombre" type="text">
                 </div>
         </div>
         

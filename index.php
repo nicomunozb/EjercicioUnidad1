@@ -1,3 +1,4 @@
+<?php include ('lib/constante.php')?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -15,8 +16,9 @@ and open the template in the editor.
     <body>
         
         <div id="contenedor">
-            <div id="titulo"></div>
+            <div id="tituloSitio"></div>
             <div id="menu"><?php include('menu.php');?></div>
+            <div id="tituloPag"></div>
             <div id="contenido"></div>
         </div>
         
@@ -24,4 +26,17 @@ and open the template in the editor.
         // put your code here
         ?>
     </body>
+    
+    <script>
+        $("#menuIngreso").click(function(){
+            
+        if ($("[id*=subProducto]").css("display")!="none"){
+            $("[id*=subProducto]").css("display"),"none");
+        }
+        else{
+            $("[id*=subProducto]").show();
+            $("[id*=subProducto]").css("display"),"block");
+        }
+        });
+    </script>
 </html>
